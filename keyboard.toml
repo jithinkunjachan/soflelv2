@@ -11,6 +11,7 @@ chip = "nrf52840"
 [layout]
 rows = 5
 cols = 6
+layers = 4
 
 [storage]
 
