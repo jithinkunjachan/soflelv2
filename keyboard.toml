@@ -1,7 +1,7 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
 name = "jksofelv2"
-product_name = "jksofelv2"
+product_name = "rjsofelv2"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RJ"
@@ -57,7 +57,7 @@ col_pins = ["P0_02","P1_15","P1_13","P1_11","P0_10","P0_09"]
 rows = 5
 cols = 6
 row_offset = 0
-col_offset = 7
+col_offset = 6
 ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 # Battery monitoring for peripheral
 # battery_adc_pin = "P0_05"
