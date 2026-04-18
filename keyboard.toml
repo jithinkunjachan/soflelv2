@@ -39,7 +39,7 @@ ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 # Battery monitoring configuration for central device
 battery_adc_pin = "P0_05"
 # adc_divider_measured = 2000
-adc_divider_total = 2806
+# adc_divider_total = 2806
 
 
 [split.central.matrix]
@@ -57,7 +57,7 @@ ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 # Battery monitoring for peripheral
 battery_adc_pin = "P0_05"
 # adc_divider_measured = 2000
-adc_divider_total = 2806
+# adc_divider_total = 2806
 
 [split.peripheral.matrix]
 matrix_type = "normal"
