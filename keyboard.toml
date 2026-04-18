@@ -10,14 +10,28 @@ chip = "nrf52840"
 
 [layout]
 rows = 5
-cols = 6
+cols = 12
 layers = 4
 
 [storage]
 
 [ble]
 enabled = true
-
+# Ble configuration
+# To use the default configuration, ignore this section completely
+[ble]
+# Whether to enable BLE feature
+enabled = true
+# nRF52 SAADC pin for reading battery level, you can use a pin number or "vddh"
+battery_adc_pin = "vddh"
+# The voltage divider setting for saadc. This setting should be ignored when using "vddh" as the adc pin.
+# For example, nice!nano has 806 + 2M resistors. The saadc measures voltage on the 2M resistor, so the two values should be set to 2000 and 2806
+adc_divider_measured = 2000
+adc_divider_total = 2806
+# Set the BLE tx power; higher means better signal but more power consumption. For nRF52840 the maximum tx power is 8.
+default_tx_power = 0
+# Whether to enable 2M PHY, defaults to true.
+use_2m_phy = true
 
 [split]
 connection = "ble"
@@ -44,7 +58,7 @@ col_pins = ["P0_02","P1_15","P1_13","P1_11","P0_10","P0_09"]
 rows = 5
 cols = 6
 row_offset = 0
-col_offset = 0
+col_offset = 7
 ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 # Battery monitoring for peripheral
 # battery_adc_pin = "P0_05"
