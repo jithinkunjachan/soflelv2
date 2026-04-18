@@ -49,10 +49,10 @@ col_pins = ["P0_02","P1_15","P1_13","P1_11","P0_10","P0_09"]
 
 
 [[split.peripheral]]
-rows = 2
-cols = 1
-row_offset = 2
-col_offset = 2
+rows = 5
+cols = 6
+row_offset = 0
+col_offset = 0
 ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 # Battery monitoring for peripheral
 # battery_adc_pin = "P0_05"
@@ -63,5 +63,3 @@ ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 matrix_type = "normal"
 row_pins = ["P0_24","P1_00","P0_11","P1_04","P1_06"]
 col_pins = ["P0_02","P1_15","P1_13","P1_11","P0_10","P0_09"]
-
-
