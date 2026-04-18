@@ -15,8 +15,7 @@ layers = 4
 
 [storage]
 
-[ble]
-enabled = true
+
 # Ble configuration
 # To use the default configuration, ignore this section completely
 [ble]
